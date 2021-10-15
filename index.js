@@ -17,13 +17,24 @@ const questions = [
   },
   {
     type: "input",
-    name: "hobby",
-    message: "What is your favorite hobby?",
+    name: "APIs",
+    message: "List the names of APIs or packages you used.",
   },
   {
     type: "input",
-    name: "food",
-    message: "What is your favorite food?",
+    name: "contributors",
+    message: "List any contributors or sources used for this project.",
+  },
+  {
+    type: "input",
+    name: "tests",
+    message: "Please list any tests that should be run on your application.",
+  },
+  {
+    type: "list",
+    name: "license",
+    message: "Choose which license is the application covered under.",
+    choices: ['Mit', 'Apache', 'GNU', 'BSD'],
   },
   {
     type: "input",
@@ -31,10 +42,10 @@ const questions = [
     message: "Enter your GitHub Username",
   },
   {
-    type: "input",
-    name: "linkedin",
-    message: "Enter your LinkedIn URL.",
-  },
+  type: "input",
+  name: "email",
+  message: "Enter your email address.",
+}
 ];
 
 // TODO: Create a function to write README file
@@ -52,5 +63,3 @@ function init() {
 // Function call to initialize app
 init();
 
-//licence link
-//(https://img.shields.io/badge/license-${data.license}-brightgreen)
